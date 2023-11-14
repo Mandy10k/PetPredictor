@@ -49,6 +49,7 @@ The application will be accessible at [http://127.0.0.1:5000/](http://127.0.0.1:
 <p align = "center">
  <img src="/project_directory/static/images/deployed.png" alt="http://127.0.0.1:5000/" width="60%">
 </p>
+
 ## Folder Structure
 
 - `static/`: Contains static files such as images and styles.
