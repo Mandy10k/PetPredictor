@@ -1,0 +1,127 @@
+body, html {
+    height: 100%;
+    font-family: 'Open Sans', 'Arial', 'sans-serif';
+    background-color: #FFFFFF; /* White */
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Comic Sans MS', cursive;
+    color: #000000; /* Black */
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3; /* Light Gray */
+}
+
+.logo-container img {
+    padding-right: 20px;
+    width: 70px;
+    height: auto;
+}
+
+h1 {
+    margin: 10px;
+    font: 'Dosis', sans-serif; /* Dosis font for the website name */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    width: 45%;
+    background-color: #FFFFFF; /* White */
+    border: 1px solid #D3D3D3; /*Light Gray*/
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.instructions {
+    text-align: left;
+}
+
+.result-container {
+    text-align: left;
+}
+
+form {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+}
+
+input[type="submit"] {
+    background-color: #000000; /* Black */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input[type="file"]:focus + input[type="submit"] {
+    color: #000000; /* Black */
+}
+
+p {
+    font-size: 13px;
+    color: #000000; /* Black */
+}
+
+.list {
+    font-size: 13px;
+    color: #000000;
+}
+
+.prediction {
+    font-size: 24px;
+    color: #000000; /* Black */
+}
+
+img.output-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+    padding: 10px;
+    color: #FFFFFF; /* White */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 1px solid #D3D3D3; Light Gray */
+}
+
+.footer-left a {
+    margin-right: 10px;
+}
+
+.footer-left img {
+    width: 30px;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 13px;
+}

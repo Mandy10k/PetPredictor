@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPredictor - Cat/Dog Classifier</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script>
+        function handleFileSelect() {
+            var fileInput = document.getElementById('fileInput');
+            var fileInfo = document.getElementById('fileInfo');
+
+            if (fileInput.files.length > 0) {
+                fileInfo.style.color = '#000000'; /* Black */
+            } else {
+                fileInfo.style.color = '#000000'; /* Black */
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>petPREDICTOR</h1>
+        <div class="logo-container">
+            <img src="{{ url_for('static', filename='images/pP_logo.png') }}" alt="PetPredictor Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="card instructions">
+            <p>Upload an image to classify as cat or dog.
+                <a >
+                    <ul class= "list">
+                        <li> Click on the "Choose File" button to open your device's file explorer.</li>
+                        <li> Select a .jpg/.jpeg/.png/.bmp/.webp image from your computer.</li>
+                        <li> Click the "Upload and Predict" button to submit the image for classification.</li>
+                    </ul>
+                </a>
+            </p>
+            <p id="fileInfo">Select an image for prediction</p>
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" onchange="handleFileSelect()">
+                <br>
+                <input type="submit" value="Upload and Predict">
+                
+            </form>
+        </div>
+
+        <div class="card result-container">
+            {% if prediction %}
+                <p class="prediction">Prediction: {{ prediction }}</p>
+                <img src="{{ image_path }}" alt="Uploaded Image" class="output-image">
+            {% endif %}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <a href="https://github.com/Mandy10k/" target="_blank"><img src="{{ url_for('static', filename='images/github.png') }}" alt="GitHub"></a>
+            <a href="https://www.linkedin.com/in/mayuresh-kumbhar-mandy10k/" target="_blank"><img src="{{ url_for('static', filename='images/linkedin.png') }}" alt="LinkedIn"></a>
+            <a href="https://instagram.com/wunderkind_mind" target="_blank"><img src="{{ url_for('static', filename='images/instagram.png') }}" alt="Instagram"></a>
+        </div>
+        <div class="footer-right">
+            <p>PetPredictor &copy; 2023 by Mayuresh </p>
+        </div>
+    </footer>
+</body>
+</html>
