@@ -1,6 +1,7 @@
 # PetPredictor - Cat/Dog Image Classifier
-
-![PetPredictor Logo](/project_directory/static/images/pP_logo.png)
+<p align = "center">
+ <img src="/project_directory/static/images/pP_logo.png" alt="PetPredictor Logo"></a>   
+</p>
 
 PetPredictor is a web-based application that uses a trained convolutional neural network (CNN) to classify uploaded images as either a cat or a dog. The project is built using Flask for the backend and incorporates HTML, CSS, and JavaScript for the frontend. This README provides an overview of the project, instructions for use, and details on how to set up and run the application.
 
@@ -46,7 +47,7 @@ Make sure to replace the placeholder URLs, paths, and project-specific details w
 
 The application will be accessible at [http://127.0.0.1:5000/](http://127.0.0.1:5000/) in your web browser.
 <p align = "center">
- <img src="/Users/Mandy/GitHub/PetPredictor/project_directory/static/images/deployed.png" alt="DCGAN" width="60%">
+ <img src="/project_directory/static/images/deployed.png" alt="http://127.0.0.1:5000/" width="60%">
 </p>
 ## Folder Structure
 
